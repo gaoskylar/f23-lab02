@@ -1,10 +1,10 @@
-function square(sideLen: number): Shape {
+import { Shape } from './shape.js';
+
+export function newSquare(sideLen: number): Shape {
+    sideLen
     return {
-        sideLen,
         computeArea: function (): number {
             return sideLen * sideLen
         }
     }
 }
-
-export { square }
